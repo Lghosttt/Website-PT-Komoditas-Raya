@@ -1,0 +1,56 @@
+/* Responsive Header */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul li {
+        display: block;
+    }
+}
+
+/* Responsive Upper Section */
+@media (max-width: 768px) {
+    .upper {
+        padding: 50px; /* Kurangi padding agar tidak terlalu besar */
+    }
+
+    .visi, .misi {
+        margin: 20px auto; /* Supaya sejajar di layar kecil */
+        text-align: center;
+        flex-direction: column;
+    }
+}
+
+/* Responsive Profil Perusahaan */
+@media (max-width: 768px) {
+    .penjelasan-pt {
+        padding: 50px; /* Kurangi padding di layar kecil */
+    }
+
+    .isi-pt {
+        min-width: auto;
+        padding: 20px;
+    }
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-content, .footer-contact, .footer-social {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
