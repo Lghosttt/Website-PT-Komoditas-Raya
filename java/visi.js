@@ -6,7 +6,7 @@ const products = [
         image: "gudang 1.jpeg"
     },
     {
-        name: "Misi",
+        name: "MISI",
         description: "Menghasilkan kopi berkualitas tinggi dengan menggunakan biji kopi segar dan proses pengolahan yang baik. Membangun hubungan yang kuat dengan petani kopi lokal untuk mendukung pertanian berkelanjutan. Meningkatkan kesadaran akan pentingnya kopi berkualitas dan mendukung budaya kopi di Indonesia. Mengembangkan produk kopi yang inovatif dan beragam untuk memenuhi kebutuhan pelanggan.",
         image: "misi.jpg"
     }
