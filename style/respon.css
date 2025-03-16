@@ -1,9 +1,11 @@
 @media (max-width: 768px) {
     .header-container {
+        width: 100%;
         flex-direction: column;
         height: auto;
-        padding: 10px;
+        padding: 10px 20px;
         text-align: center;
+        display: flex;
     }
 
     nav ul {
@@ -53,16 +55,16 @@
 
 @media (max-width: 768px) {
     .isi-pt h1 {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .isi-pt p {
-        font-size: 14px;
+        font-size: 10px;
         text-align: center;
     }
 
     .isi-pt button {
-        font-size: 16px; 
+        font-size: 15px; 
         width: 150px; 
     }
 }
