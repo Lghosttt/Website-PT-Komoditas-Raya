@@ -97,7 +97,7 @@ nav ul {
 
 
 .visi {
-  justify-content: space-between;
+  justify-content: center;
   display: flex;
   align-items: center;
   border: 2px solid transparent;
@@ -105,13 +105,17 @@ nav ul {
   padding: 50px;
   color: white;
   border-radius: 20px;
-  margin-right: 900px;
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
-  margin-top: 100px;
+  text-align: center;
+}
+
+.visi, .misi {
+    margin: 50px auto;
+    max-width: 80%;
 }
 
 .misi {
-    justify-content: space-between;
+    justify-content: center;
     display: flex;
     align-items: center;
     border: 2px solid transparent;
@@ -119,10 +123,11 @@ nav ul {
     color: white;
     padding: 50px;
     border-radius: 20px;
-    margin-left: 900px;
     box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
     margin-top: 10px;
+    text-align: center;
   }
+
   button {
     width: 200px;
     padding: 10px;
@@ -135,21 +140,21 @@ nav ul {
 }
 
 .hidden {
-    opacity: 0; /* Awalnya elemen tidak terlihat */
-    transition: all 1s ease-in-out; /* Animasi smooth */
+    opacity: 0;
+    transition: all 1s ease-in-out;
 }
 
 .slide-right {
-    transform: translateX(-100px);
+    transform: translateY(-50px);
 }
 
 .slide-left {
-    transform: translateX(100px);
+    transform: translateY(50px);
 }
 
 .show {
     opacity: 1;
-    transform: translateX(0); /* Geser elemen ke posisi normal */
+    transform: translateX(0);
 }
 
 .penjelasan-pt {
@@ -253,4 +258,3 @@ footer {
     border-top: 1px solid #444;
     padding-top: 10px;
 }
-
