@@ -1,4 +1,4 @@
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     .header-container {
         display: flex;
         flex-direction: column;
@@ -6,34 +6,24 @@
         justify-content: center;
         width: 100%;
         height: auto;
-        padding: 10px 15px;
+        padding: 10px 20px;
     }
-
-    .container {
-        max-width: 100%;
-        overflow-x: hidden;
-    }
-    
 
     nav ul {
         display: flex;
-        justify-content: center;
         flex-direction: column;
         text-align: center;
         gap: 10px;
         padding: 0;
         width: 100%;
-        gap: 15px;
     }
     
     nav ul li {
         margin-bottom: 10px;
-        width: 100%;
     }
 
     .upper {
         padding: 30px;
-        text-align: center;
     }
 
     .visi, .misi {
@@ -42,27 +32,19 @@
         align-items: center;
         text-align: center;
         margin: 20px auto;
-        padding: 15px;
-        max-width: 95%;
-    }
-    .penjelasan-pt {
-        padding: 20px; /* Menambah padding untuk memperlebar kotak */
+        padding: 30px;
         max-width: 90%;
-        border-radius: 20px;
-        text-align: center;
+    }
+
+    .penjelasan-pt {
+        padding: 20px;
+        max-width: 95%;
     }
 
     .isi-pt {
         width: 100%;
-        padding: 15px;
+        padding: 20px;
         box-sizing: border-box;
-    }
-
-    .isi-pt button {
-        min-width: 120px;
-        font-size: 16px; 
-        padding: 12px;
-        width: auto;  /* Tombol akan menyesuaikan ukurannya */
     }
 
     .footer-container {
@@ -70,33 +52,26 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
-        gap: 10px;
+        gap: 15px;
     }
 
     .footer-content, .footer-contact, .footer-social {
         width: 100%;
-        margin-bottom: 15px;
-        text-align: center;
+        margin-bottom: 20px;
     }
 
     .isi-pt h1 {
-        font-size: 16px;
+        font-size: 20px;
     }
 
     .isi-pt p {
-        font-size: 14px;
+        font-size: 16px;
         text-align: center;
-        line-height: 1.4;
+        line-height: 1.5;
     }
 
     .isi-pt button {
-        font-size: 14px; 
-        padding: 8px 16px;
-        width: 140px; 
-    }
-
-    img {
-        max-width: 100%;
-        height: auto;
+        font-size: 16px; 
+        width: 150px; 
     }
 }
