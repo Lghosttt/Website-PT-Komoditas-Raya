@@ -1,182 +1,276 @@
-/* Reset margin & padding */
-* {
+body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
+    background-color: #F2E2B1;
+} 
 
-/* ====== Header ====== */
 .header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     background-color: #493628;
-    color: white;
-    padding: 15px 20px;
-}
-
-.header-container p {
-    font-size: 22px;
-    font-weight: bold;
-}
-
-.menu-toggle {
-    display: none;
-    font-size: 24px;
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-}
-
-/* Navigasi */
-.nav-menu ul {
-    display: flex;
-    list-style: none;
-}
-
-.nav-menu li {
-    margin-left: 20px;
-}
-
-.nav-menu a {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-}
-
-/* ====== Slider ====== */
-.slider {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-}
-
-.slides {
-    display: flex;
-    width: 400%;
-    transition: transform 0.5s ease-in-out;
-}
-
-.slide {
-    width: 100%;
-    text-align: center;
-    background-color: #6d4c41;
-    padding: 50px 0;
-}
-
-.slide a {
-    font-size: 24px;
-    color: white;
-}
-
-/* ====== Section Visi & Misi ====== */
-.middle {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 50px 20px;
-}
-
-.visi, .misi {
-    width: 45%;
     padding: 20px;
-    background-color: #e0c2a2;
-    margin: 10px;
-    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
 }
 
-.visi h1, .misi h1 {
-    text-align: center;
-    font-size: 30px;
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a:hover {
+    background-color: #F2E2B1;
+    border-radius: 5px;
     text-decoration: underline;
 }
 
-button {
-    display: block;
-    margin: 10px auto;
-    padding: 10px 20px;
-    border: none;
-    background-color: #493628;
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.header-container p {
+    margin: 0;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: solid;
+    font-weight: bold;
     color: white;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    padding: 10px;
     font-size: 18px;
-    cursor: pointer;
-    border-radius: 5px;
 }
 
-button:hover {
-    background-color: #6d4c41;
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    gap: 20px;
 }
 
-/* ====== Profil Perusahaan ====== */
-.penjelasan-pt {
-    background-color: #493628;
-    color: white;
+.section-upper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.upper {
+    justify-content: center;
     text-align: center;
-    padding: 50px 20px;
+    background-image: url(../asset/download.jpg);
+    max-width: 100%;
+    background-size: cover;
+    padding: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slider {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    color: white;
+  }
+  
+  .slide {
+    background-color: #543310;
+    min-width: 100%;
+    text-align: center;
+    line-height: 200px;
+    font-size: 30px;
+    text-decoration: none;
+    list-style: none;
+  }
+
+
+.visi {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  border: 2px solid transparent;
+  background-color: #543310;
+  padding: 50px;
+  color: white;
+  border-radius: 20px;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.visi, .misi {
+    margin: 50px auto;
+    max-width: 80%;
+}
+
+.misi {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border: 2px solid transparent;
+    background-color: #543310;
+    color: white;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  button {
+    width: 200px;
+    padding: 10px;
+    background-color: #F2E2B1;
+    color: black;
+    text-decoration: solid;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hidden {
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+.slide-right {
+    transform: translateY(-20px);
+}
+
+.slide-left {
+    transform: translateY(20px);
+}
+
+.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.penjelasan-pt {
+    background-image: url(../asset/middleback.jpg);
+    background-size: cover;
+    max-width: 100%;
+    justify-content: center;
+    margin-top: 20px;
+    text-align: center;
+    align-items: center;
+    padding: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .isi-pt {
-    max-width: 800px;
-    margin: auto;
-}
-
-.isi-pt h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
+    background-color: #543310;
+    min-width: 100%;
+    text-align: center;
+    line-height: 100px;
+    font-size: 30px;
+    text-decoration: none;
+    list-style: none;
+    border-radius: 20px;
+    padding : 20px
+  }
+  .isi-pt h1 {
+    text-decoration: underline;
+    margin-bottom: 5px;
 }
 
 .isi-pt p {
-    font-size: 18px;
-    margin-bottom: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1.6;
+    text-align: justify;
+    display: inline-block;
+    margin-bottom: 5px;
 }
 
-/* ====== Visit Us ====== */
 .visit {
+    background-color: #543310;
+    min-width: 100%;
     text-align: center;
-    padding: 50px 20px;
-    background-color: #e0c2a2;
-}
-
-.visit h1 {
-    font-size: 28px;
-    margin-bottom: 20px;
-}
-
-.address li {
+    line-height: 50px;
+    text-decoration: none;
     list-style: none;
-    font-size: 18px;
-    margin-bottom: 10px;
+    border-radius: 200px;
+    color: white;
+  }
+  .address {
+    text-decoration: none;
+    margin-bottom: 5px;
+    font-size: 20px;
+    text-align: left;
+    margin-left: 70px;
 }
 
-/* ====== Footer ====== */
+.ul li {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 0.5;
+    text-align: justify;
+    display: inline-block;
+}
+
 footer {
-    background-color: #493628;
-    color: white;
+    background-color: #493628; /* Warna latar belakang */
+    color: white; /* Warna teks */
+    padding: 20px 0;
     text-align: center;
-    padding: 30px 20px;
+    margin-top: 30px;
 }
 
 .footer-container {
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 1000px;
-    margin: auto;
+    padding: 10px;
 }
 
 .footer-content, .footer-contact, .footer-social {
     width: 30%;
 }
 
-.footer-bottom {
-    margin-top: 20px;
+.footer-contact ul {
+    list-style: none;
+    padding: 0;
 }
 
-/* ====== Responsive untuk Mobile ====== */
-@media (max-width: 768px) {
-    .header-container {
+.footer-contact li {
+    margin: 5px 0;
+}
+
+.footer-social a {
+    color: #ffd700; /* Warna emas */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-bottom {
+    margin-top: 5px;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+}
+
+.menu-toggle {
+        display: none;
+        background-color: #493628;
+        color: white;
+        border: none;
+        font-size: 25px;
+        cursor: pointer;
+        padding: 10px;
+    
+}
+
+@media (max-width: 768px){
+    header-container {
         flex-direction: column;
         text-align: center;
     }
