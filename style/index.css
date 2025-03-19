@@ -269,7 +269,7 @@ footer {
     
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px){
     .menu-toggle {
         display: none ;
         background: none;
