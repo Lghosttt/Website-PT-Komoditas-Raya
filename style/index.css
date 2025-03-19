@@ -259,44 +259,50 @@ footer {
 }
 
 .menu-toggle {
-    display: none;
-    background: none;
-    border: none;
-    font-size: 30px;
-    cursor: pointer;
-    padding: 10px;
-    width: 50px;  /* Tambahkan width untuk simetri */
-    height: 50px; /* Tambahkan height */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 15px;
-    right: 20px;
-    z-index: 100;
+        display: none;
+        background-color: #493628;
+        color: white;
+        border: none;
+        font-size: 25px;
+        cursor: pointer;
+        padding: 10px;
     
 }
 
-@media (min-width: 768px) and (max-width: 1024px){
+@media (min-width: 768px) and (max-width: 800px) {
     .menu-toggle {
-        display: flex; /* Pastikan tombol muncul di mobile */
+        display: none ;
+        background: none;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+        padding: 10px;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        right: 20px;
+        z-index: 100;
     }
 
     .nav-menu {
         position: absolute;
         top: 60px;
-        right: -250px; /* Menu awalnya tersembunyi */
-        width: 200px;
+        right: 100px;
+        width: 100px;
         background-color: #493628;
         border-radius: 10px;
         padding: 10px;
         opacity: 0;
         transform: translateX(50px);
-        transition: transform 0.4s ease-in-out, opacity 0.3s ease-in-out;
-        z-index: 999; /* Pastikan menu ada di atas konten lain */
+        transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+        z-index: 999;
     }
 
     .nav-menu.active {
+        display: block;
         right: 20px;
         opacity: 1;
         transform: translateX(0);
