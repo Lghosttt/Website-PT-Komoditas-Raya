@@ -1,302 +1,226 @@
-body {
+/* Reset margin & padding */
+* {
     margin: 0;
     padding: 0;
-    background-color: #F2E2B1;
-} 
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
 
+/* ====== Header ====== */
 .header-container {
-    background-color: #493628;
-    padding: 20px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    height: 50px;
-}
-
-nav ul li {
-    display: inline-block;
-    margin: 0 10px;
-}
-
-nav ul li a:hover {
-    background-color: #F2E2B1;
-    border-radius: 5px;
-    text-decoration: underline;
-}
-
-ul {
-    margin: 0px;
-    padding: 0px;
+    align-items: center;
+    background-color: #493628;
+    color: white;
+    padding: 15px 20px;
 }
 
 .header-container p {
-    margin: 0;
-    font-size: 25px;
+    font-size: 22px;
     font-weight: bold;
-    text-decoration: solid;
-    font-weight: bold;
-    color: white;
 }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bolder;
-    padding: 10px;
-    font-size: 18px;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 10px 0 0;
-    display: flex;
-    gap: 20px;
-}
-
-.section-upper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.upper {
-    justify-content: center;
-    text-align: center;
-    background-image: url(../asset/download.jpg);
-    max-width: 100%;
-    background-size: cover;
-    padding: 200px;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.slider {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    position: relative;
-  }
-  
-  .slides {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    color: white;
-  }
-  
-  .slide {
-    background-color: #543310;
-    min-width: 100%;
-    text-align: center;
-    line-height: 200px;
-    font-size: 30px;
-    text-decoration: none;
-    list-style: none;
-  }
-
-
-.visi {
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  border: 2px solid transparent;
-  background-color: #543310;
-  padding: 50px;
-  color: white;
-  border-radius: 20px;
-  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
-.visi, .misi {
-    margin: 50px auto;
-    max-width: 80%;
-}
-
-.misi {
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    border: 2px solid transparent;
-    background-color: #543310;
-    color: white;
-    padding: 50px;
-    border-radius: 20px;
-    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
-    margin-top: 10px;
-    text-align: center;
-  }
-
-  button {
-    width: 200px;
-    padding: 10px;
-    background-color: #F2E2B1;
-    color: black;
-    text-decoration: solid;
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    background: none;
     border: none;
-    border-radius: 5px;
+    color: white;
     cursor: pointer;
 }
 
-.hidden {
-    opacity: 0;
-    transition: all 1s ease-in-out;
+/* Navigasi */
+.nav-menu ul {
+    display: flex;
+    list-style: none;
 }
 
-.slide-right {
-    transform: translateY(-20px);
+.nav-menu li {
+    margin-left: 20px;
 }
 
-.slide-left {
-    transform: translateY(20px);
+.nav-menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
 }
 
-.show {
-    opacity: 1;
-    transform: translateX(0);
+/* ====== Slider ====== */
+.slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
 }
 
-.penjelasan-pt {
-    background-image: url(../asset/middleback.jpg);
-    background-size: cover;
-    max-width: 100%;
-    justify-content: center;
-    margin-top: 20px;
+.slides {
+    display: flex;
+    width: 400%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    width: 100%;
     text-align: center;
-    align-items: center;
-    padding: 100px;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: #6d4c41;
+    padding: 50px 0;
+}
+
+.slide a {
+    font-size: 24px;
+    color: white;
+}
+
+/* ====== Section Visi & Misi ====== */
+.middle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px 20px;
+}
+
+.visi, .misi {
+    width: 45%;
+    padding: 20px;
+    background-color: #e0c2a2;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.visi h1, .misi h1 {
+    text-align: center;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    border: none;
+    background-color: #493628;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #6d4c41;
+}
+
+/* ====== Profil Perusahaan ====== */
+.penjelasan-pt {
+    background-color: #493628;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
 }
 
 .isi-pt {
-    background-color: #543310;
-    min-width: 100%;
-    text-align: center;
-    line-height: 100px;
-    font-size: 30px;
-    text-decoration: none;
-    list-style: none;
-    border-radius: 20px;
-    padding : 20px
-  }
-  .isi-pt h1 {
-    text-decoration: underline;
-    margin-bottom: 5px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.isi-pt h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
 }
 
 .isi-pt p {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    line-height: 1.6;
-    text-align: justify;
-    display: inline-block;
-    margin-bottom: 5px;
+    font-size: 18px;
+    margin-bottom: 20px;
 }
 
+/* ====== Visit Us ====== */
 .visit {
-    background-color: #543310;
-    min-width: 100%;
     text-align: center;
-    line-height: 50px;
-    text-decoration: none;
+    padding: 50px 20px;
+    background-color: #e0c2a2;
+}
+
+.visit h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.address li {
     list-style: none;
-    border-radius: 200px;
-    color: white;
-  }
-  .address {
-    text-decoration: none;
-    margin-bottom: 5px;
-    font-size: 20px;
-    text-align: left;
-    margin-left: 70px;
+    font-size: 18px;
+    margin-bottom: 10px;
 }
 
-.ul li {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    line-height: 0.5;
-    text-align: justify;
-    display: inline-block;
-}
-
+/* ====== Footer ====== */
 footer {
-    background-color: #493628; /* Warna latar belakang */
-    color: white; /* Warna teks */
-    padding: 20px 0;
+    background-color: #493628;
+    color: white;
     text-align: center;
-    margin-top: 30px;
+    padding: 30px 20px;
 }
 
 .footer-container {
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
-    padding: 10px;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: auto;
 }
 
 .footer-content, .footer-contact, .footer-social {
     width: 30%;
 }
 
-.footer-contact ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-contact li {
-    margin: 5px 0;
-}
-
-.footer-social a {
-    color: #ffd700; /* Warna emas */
-    text-decoration: none;
-    font-weight: bold;
-}
-
 .footer-bottom {
-    margin-top: 5px;
-    border-top: 1px solid #444;
-    padding-top: 10px;
+    margin-top: 20px;
 }
 
-.menu-toggle {
-        display: none;
-        background-color: #493628;
-        color: white;
-        border: none;
-        font-size: 25px;
-        cursor: pointer;
-        padding: 10px;
-    
-}
-
-@media (max-width: 768px){
-    .header-container{
+/* ====== Responsive untuk Mobile ====== */
+@media (max-width: 768px) {
+    .header-container {
         flex-direction: column;
         text-align: center;
-        height: auto;
-        padding-bottom: 10px;
     }
+
     .menu-toggle {
-        display: block; 
-        margin-top: 10px; 
+        display: block;
+        margin-top: 10px;
     }
 
     .nav-menu {
-        position: absolute;
-        top: 80px;
-        right: 20px;
-        width: 150px;
-        background-color: #493628;
-        border-radius: 10px;
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #6d4c41;
         padding: 10px;
-        opacity: 0;
-        transform: translateX(50px);
-        transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
-        z-index: 999;
     }
 
-    .nav-menu.active {
-        opacity: 1;
-        transform: translateX(0);
+    .nav-menu.show {
+        display: flex;
+    }
+
+    .nav-menu ul {
+        flex-direction: column;
+    }
+
+    .nav-menu li {
+        margin: 10px 0;
+    }
+
+    .middle {
+        flex-direction: column;
+    }
+
+    .visi, .misi {
+        width: 100%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-content, .footer-contact, .footer-social {
+        width: 100%;
+        margin-bottom: 20px;
     }
 }
