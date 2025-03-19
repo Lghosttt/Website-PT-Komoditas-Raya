@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style/loading.css">
     <link rel="stylesheet" href="style/respon.css">
     <script src="java/loading.js"></script>
+    <script src="java/animasi.js"></script>
 </head>
 <body>
     <div id="loading-screen">
@@ -16,6 +17,8 @@
     <!-- Start Header-->
       <div class="header-container">
         <p><a href="index.html" style="text-decoration: none; color: inherit;">PT BUMI KOMODITAS RAYA</a></p>
+        <button class="menu-toggle">☰</button>
+        <nav class="nav-menu">
         <nav>
             <ul>
                 <li><a href="about.html">About Company</a></li>
@@ -24,6 +27,12 @@
                 <li><a href="visit.html">Visit Us</a></li>
             </ul>
         </nav>
+        </nav>
+        <script>
+            document.querySelector('.menu-toggle').addEventListener('click', function () {
+                document.querySelector('.nav-menu').classList.toggle('show');
+            });
+        </script>
       </div>
      <!--End Header-->
 
@@ -123,11 +132,11 @@
 <!--visit Start-->
     <section>
         <div class="visit">
-            <h1 style="font-size: 40px;">Silahkan kunjungi kami di alamat berikut</h1>
+            <h1 style="font-size: 30px;">Silahkan kunjungi kami di alamat berikut</h1>
             <ul class="address">
                 <li>📍 Jl. Telkom No.5, RT.001/RW.005, Padurenan, Kec. Mustika Jaya, Kota Bks, Jawa Barat 17166</li>
                 <li><a href="mailto:bumikomoditasraya@gmail.com" style="color: white; text-decoration: none;"></a>📧: bumikomoditasraya@gmail.com</a></li>
-                <li><a href="https://wa.me/6285715188687" style="color: white; text-decoration: none;">📞: 085715188687</a></li>
+                <li><a href="https://wa.me/6285715188687" style="color: white; text-decoration: none;">📞: 0895621047836</a></li>
             </ul>
             <a href="visit.html">
             <button type="submit" style="text-decoration: underline; font-family: 'Times New Roman', Times, serif; font-size: 25px; margin-bottom: auto;">Find More</button>
@@ -154,8 +163,7 @@
         <div class="footer-social">
             <h3>Ikuti Kami</h3>
             <a href="https://facebook.com">Facebook</a> |
-            <a href="https://instagram.com">Instagram</a> |
-            <a href="https://linkedin.com">LinkedIn</a>
+            <a href="https://instagram.com">Instagram</a>
         </div>
     </div>
     <div class="footer-bottom">
