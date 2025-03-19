@@ -321,17 +321,3 @@ body{
         margin-bottom: 20px;
     }
 }
-
-.upper {
-    padding: 50px 10px;
-}
-
-.penjelasan-pt {
-    border-radius: 10px;
-    padding: 30px 15px;
-}
-
-.visi .misi {
-    padding: 30px;
-    width: 100%;
-}
